@@ -20,7 +20,7 @@ public class amphibians extends animals{
 
     public amphibians(String name, int age, String lifeZone) {
         super(name, age);
-        this.lifeZone = lifeZone;
+        setLifeZone(lifeZone);
     }
 
     @Override

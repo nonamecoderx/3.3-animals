@@ -19,11 +19,7 @@ public class birds extends animals{
 
     public birds(String name, int age, String lifeZone) {
         super(name, age);
-        if (lifeZone == null||lifeZone.isEmpty()||lifeZone.isBlank()) {
-            this.lifeZone = "неизвестно";
-        } else {
-            this.lifeZone = lifeZone;
-        }
+        setLifeZone(lifeZone);
     }
 
     @Override

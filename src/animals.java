@@ -9,8 +9,8 @@ public abstract class animals {
     }
 
     public animals(String name, int age) {
-        this.name = name;
-        this.age = age;
+        setName(name);
+        setAge(age);
     }
 
     public void setName(String name) {

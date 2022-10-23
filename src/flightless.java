@@ -19,7 +19,7 @@ public class flightless extends birds{
 
     public flightless(String name, int age, String walkType) {
         super(name, age);
-        this.walkType = walkType;
+        setWalkType(walkType);
     }
 
     public flightless(String name, int age, String lifeZone, String walkType) {

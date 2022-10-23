@@ -14,7 +14,7 @@ public class flying extends birds{
 
     public flying(String name, int age, String walkType) {
         super(name, age);
-        this.walkType = walkType;
+        setWalkType(walkType);
     }
 
     public flying(String name, int age, String lifeZone, String walkType) {

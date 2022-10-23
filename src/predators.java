@@ -29,11 +29,7 @@ public class predators extends mammals{
 
     public predators(String name, int age, String lifeZone, int movementSpeed, String eatType) {
         super(name, age, lifeZone, movementSpeed);
-        if (eatType == null || eatType.isEmpty() || eatType.isBlank()) {
-            this.eatType = "неизвестно";
-        } else {
-            this.eatType = eatType;
-        }
+        setEatType(eatType);
     }
 
     @Override
