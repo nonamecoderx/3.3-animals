@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public abstract class animals {
     protected String name;
     protected int age;
@@ -37,6 +39,19 @@ public abstract class animals {
     //метод спать
     public void sleep(){
         System.out.println("любит спать");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        animals animals = (animals) o;
+        return age == animals.age && name.equals(animals.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
 
